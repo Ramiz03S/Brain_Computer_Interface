@@ -249,7 +249,7 @@ def run_transfer_learning(model_type,dataset_type, lr, EPOCHS,PATIENCE,GIVE_UP,M
         window_stride_ratio (float): The ratio between the sliding window's length and stride
     """
     if dataset_type == 'physionet':
-        subjects = [1,15,25,35,43,55,65,73,85]
+        subjects = np.arange(1,10)
         loo = LeaveOneOut()
         for i, (train_index,test_index) in enumerate(loo.split(subjects)):
             train_subjects = subjects[train_index]
