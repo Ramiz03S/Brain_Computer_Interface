@@ -6,7 +6,7 @@ This repository provides a program for training and evaluating the EEGNet on thr
 ## **Features**
 - Training EEGNet on 3 MI EEG-based 4-class datasets
 - Supports artifact removal using the FASTER algorithm
-- provides a broad signal processing pipeline 
+- Provides a broad signal processing pipeline 
 - Data augmentation via the sliding window technique
 - Has both within-subject training and transfer learning via the hold-one-out approaches
 - Provides comprehensive metric reporting, including accuracy, precision, recall, F1-score, confusion matrices, and Loss against epochs graphs.
